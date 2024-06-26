@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#51D556">
+
+    <TextView
+        android:id="@+id/inventorytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="INVENTARIO"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewinventory"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/inventorytitle"
+        android:layout_marginTop="-6dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/returnBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#51D556"
+        android:onClick="returnFunction"
+        android:shadowColor="#303F9F"
+        android:text="Volver"
+        android:textColorLink="#303F9F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>
