@@ -1,66 +1,27 @@
-# Repositorio Android del Grupo 4 (UPZ-APOCALYPSE).
+# Android de UPZ-APOCALYPSE
 
-Primer commit:
-- Menú básico con las funciones de Login y Registrar sin acabar
+En este proyecto hemos creado un juego que funciona tanto en una interfaz web como en una aplicación Android gestionado mediante una REST API. Además, puede funcionar en un entorno de producción local y almacena los datos a través de una base de datos de MariaDB (HeidiSQL), que contiene tres tablas: User, Inventory e Item.
 
-Segundo commit:
-- Menú con pantalla de Home, Login, Registrar y Main
-- Funciones de Login y Registrar 90% acabadas, con su respectiva llamada a la API CLIENT
+Implementaciones específicas: Shared preferences, SplashScreen y Spinner.
 
-Tercer commit:
-- Menú con pantalla de Home, Login, Registrar, Main, Tienda, DetailTienda (para ver los detalles de los objetos)
-- Funciones de Login y Registrar 90% acabadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
+Operaciones:
 
-Cuarto commit (Acabada Iteración 1):
-- Menú con pantalla de Home, Login, Registrar, Main, Tienda, DetailTienda (para ver los detalles de los objetos)
-- Funciones de Login y Registrar perfectamente implementadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
+GET 
+- Obtener lista de usuarios.
+- Obtener lista de objetos en la tienda.
+- Obtener inventario de un usuario.
+- Obtener lista de denuncias.
+- Obtener lista de consultas.
+- Obtener lista de preguntas frecuentes (FAQs).
 
-Quinto commit:
-- Menú con pantalla de Splash Screen, Home, Login, Registrar, Main, Tienda y DetailTienda (para ver los detalles de los objetos)
-- Funciones de Login y Registrar perfectamente implementadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
-- Símbolo de carga de servicios implementado
-
-Sexto commit:
-- Menú con pantalla de Splash Screen, Home, Login, Registrar, Main, Tienda, DetailTienda, Perfil y Actualizar Perfil
-- Funciones de Login y Registrar perfectamente implementadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
-- Funcionalidad de Shared Preferences y Perfil al 70% falta para ambos cambiar el Backend
-- Símbolo de carga de servicios implementado
-
-Septimo commit:
-- Menú con pantalla de Splash Screen, Home, Login, Registrar, Main, Tienda, DetailTienda, Perfil y Actualizar Perfil
-- Funciones de Login y Registrar perfectamente implementadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
-- Funcionalidad de Shared Preferences completada
-- Perfil al 80% 
-- Símbolo de carga de servicios implementado
-
-Octavo commit:
-- Menú con pantalla de Splash Screen, Home, Login, Registrar, Main, Tienda, DetailTienda, Perfil, Actualizar Perfil,
-  Consulta, FAQs y Denuncia.
-- Funciones de Login y Registrar perfectamente implementadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
-- Funcionalidad de Shared Preferences completada
-- Perfil acabado, falta terminar función de Eliminar.
-- Mínimo 2 --> Denuncia hecha, FAQs hecha y Consulta hecha. 
-- Símbolo de carga de servicios implementado
-
-Noveno commit:
-- Menú con pantalla de Splash Screen, Home, Login, Registrar, Main, Tienda, DetailTienda, Perfil, Actualizar Perfil,
-  Consulta, FAQs, Inventario y Denuncia.
-- Funciones de Login y Registrar perfectamente implementadas, con su respectiva llamada a la API CLIENT
-- Funcionalidad de la tienda 80% terminada, falta determinar las características de los objetos y su imagen respectiva
-- Funcionalidad del inventario 80% terminada, falta determinar las características de los objetos y su imagen respectiva
-- Funcionalidad de Shared Preferences completada
-- Perfil acabado, falta terminar función de Eliminar.
-- Mínimo 2 --> Denuncia hecha, FAQs hecha y Consulta hecha. 
-- Preparado botón para Iniciar la partida en Main con su respectiva llamada al Mapa de Unity.
-- Símbolo de carga de servicios implementado
-
-Decimo commit: 
-- Tienda compra ok, inventario y cancelar compra ok
-- FAQs va perfecto, comunica perfecto con backend
-- Eliminar y actualizar cuenta del usuario
+POST
+- Registrar un nuevo usuario.
+- Iniciar sesión con credenciales.
+- Eliminar usuario con credenciales.
+- Realizar una consulta sobre la app.
+  
+PUT 
+- Comprar objeto.
+- Cancelar compra de objeto.
+- Actualizar usuario.
+- Enviar una denuncia.
